@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/estilo.css">
+    <title>Ramiro Velazco</title>
+    <link rel="shortcut icon" href="./img/rv-icono.png" />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+    <script type="text/javascript">
+        emailjs.init('5PqvZM6jlZyqZgCAU')
+    </script>
+
+</head>
+
+<body>
+    <!--SECCION INICIO-->
+    <section id="inicio">
+        <div class="contenido">
+            <header>
+                <div class="contenido-header">
+                    <h1>/RV/</h1>
+                    <nav id="nav" class="">
+                        <ul id="links">
+                            <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">INICIO</a></li>
+                            <li><a href="#sobremi" onclick="seleccionar(this)">SOBRE MI</a></li>
+                            <li><a href="#servicios" onclick="seleccionar(this)">SERVICIOS</a></li>
+                            <!--<li><a href="#proyectos"onclick="seleccionar(this)">PROYECTOS</a></li>-->
+                            <li><a href="#contacto" onclick="seleccionar(this)">CONTACTO</a></li>
+                        </ul>
+                    </nav>
+                    <!--Iconos del menu responsive-->
+                    <div id="icono-nav" onclick="responsiveMenu()">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                    <!--Iconos de las redes sociales-->
+                    <div class="redes">
+                        <a target="_blank" href="https://www.instagram.com/rami.velazco/?hl=es-la"><i
+                                class="fa-brands fa-instagram"></i></a>
+                        <a target="_blank" href="https://www.linkedin.com/in/ramiro-velazco-5296b8261/"><i
+                                class="fa-brands fa-linkedin"></i></i></a>
+                        <a target="_blank" href="https://github.com/77Rami"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+            </header>
+            <div class="presentacion">
+                <p class="bienvenida">Bienvenidos</p>
+                <h2>Soy <span>Ramiro Velazco</span>, Desarrollador Web</h2>
+                <p class="descripcion">Antes que nada, quiero agradecerles por visitar mi portafolio. Les doy la
+                    bienvenida a esta página, donde compartiré un poco sobre mí, los servicios que actualmente estoy
+                    ofreciendo y, al final, encontrarán una sección de contacto para comunicarnos por correo
+                    electrónico. ¡Gracias por su interés!</p>
+                <!--<a href="#portfolio">Ir a Portafolio</a>-->
+            </div>
+        </div>
+    </section>
+    <!--SECCION SOBRE MI-->
+    <section id="sobremi">
+        <div class="contenedor-foto">
+            <img src="./img/imagen-edit-yo.png" alt="">
+        </div>
+        <div class="sobremi">
+            <p class="titulo-seccion"><strong>SOBRE MI</strong></p>
+            <h2>Hola soy, <span> Ramiro Velazco</span></h2>
+            <h3>Desarrollador Web</h3>
+            <p>Tengo 20 años y nací el 28 de diciembre de 2002. Actualmente, resido en Escobar, una localidad ubicada en
+                la provincia de Buenos Aires, Argentina. </p>
+            <p>Inicialmente, comencé estudiando Ingeniería en Sistemas en la UTN. Sin embargo, posteriormente decidí
+                enfocarme específicamente en la programación. Me inscribí en la carrera de Técnico Superior en
+                Programación en el Instituto Teclab. Actualmente, me encuentro en la etapa final de la carrera y estoy
+                ansioso por concluir este proceso y dar inicio a mi trayectoria profesional en el mundo laboral.</p>
+            <a href="FT AR - Certificado AR Aprende Wordpress de forma sencilla - FTM Ed 12.pdf"
+                download="curriculum">Descargar CV</a>
+        </div>
+    </section>
+
+    <hr>
+
+    <!--SECCION SERVICIOS-->
+    <section id="servicios">
+        <h3 class="titulo-seccion">MIS SERVICIOS</h3>
+        <div class="fila">
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-code"></i></span>
+                <h4>Desarrollador de Aplicaciones Mobile</h4>
+                <hr>
+                <!-- <ul class="servicios-tag">
+                    <li>Web</li>
+                    <li>Graphic</li>
+                    <li>CEO</li>
+                </ul>-->
+                <p>En la realización de este tipo de proyectos, empleo Android Studio junto con Java.</p>
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-code"></i></span>
+                <h4>Diseño de Sitios Web</h4>
+                <hr>
+                <!--ul class="servicios-tag">
+                    <li>Web</li>
+                    <li>Graphic</li>
+                    <li>CEO</li>
+                </ul>-->
+                <p>Para brindar este servicio, empleo HTML para establecer la estructura, CSS para darle estilo y
+                    Javascript para añadir funcionalidad a la página.</p>
+            </div>
+        </div>
+        <!--<div class="fila">
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-code"></i></span>
+                <h4>Diseño de Sitios Web</h4>
+                <hr>
+                <ul class="servicios-tag">
+                   <!-- <li>Web</li>
+                    <li>Graphic</li>
+                    <li>CEO</li>
+                </ul>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, dignissimos? Rerum officiis officia
+                    minima quam aut perferendis enim, eius ullam modi totam molestias numquam.</p>
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-code"></i></span>
+                <h4>Diseño de Sitios Web</h4>
+                <hr>
+                <ul class="servicios-tag">
+                   <!-- <li>Web</li>
+                    <li>Graphic</li>
+                    <li>CEO</li>
+                </ul>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, dignissimos? Rerum officiis officia
+                    minima quam aut perferendis enim, eius ullam modi totam molestias numquam.</p>
+            </div>-->
+        </div>
+
+
+    </section>
+
+    <!-- SECCION HABILIDADES-->
+    <div class="contenedor-skills" id="skills">
+
+        <h2>HABILIDADES</h2>
+        <div class="skills">
+            <div class="info">
+                <p><span class="lista"></span><b>Html y Css</b></p>
+                <span class="porcentaje"><b>70%</b></span>
+
+            </div>
+            <div class="barra">
+                <div id="html" class="barra-progreso1"></div>
+            </div>
+
+        </div>
+
+        <div class="skills">
+            <div class="info">
+                <p><span class="lista"></span><b>Javascript</b></p>
+                <span class="porcentaje"><b>50%</b></span>
+
+            </div>
+            <div class="barra">
+                <div id="js" class="barra-progreso2"></div>
+            </div>
+        </div>
+
+        <div class="skills">
+            <div class="info">
+                <p><span class="lista"></span><b>Base de Datos</b></p>
+                <span class="porcentaje"><b>40%</b></span>
+
+            </div>
+            <div class="barra">
+                <div id="bd" class="barra-progreso3"></div>
+            </div>
+        </div>
+
+        <div class="skills">
+            <div class="info">
+                <p><span class="lista"></span><b>Programacion Mobile</b></p>
+                <span class="porcentaje"><b>50%</b></span>
+
+            </div>
+            <div class="barra">
+                <div id="pm" class="barra-progreso4"></div>
+            </div>
+        </div>
+    </div>
+
+    <!--SECCION PORTAFOLIO-->
+
+
+
+
+
+    <!--SECCION CONTACTO-->
+    <section id="contacto">
+        <h3 class="titulo-seccion">Contactanos ahora</h3>
+        <div class="contenedor-form">
+            <form target="_blank" action="https://formsubmit.co/ram1velazco@hotmail.com" method="POST">
+                <div class="fila mitad">
+                    <input type="text" placeholder="Nombre Completo" class="input-mitad" name="name" required>
+                    <input type="email" placeholder="Direccion de Email" class="input-mitad" name="email" required>
+                </div>
+                <div class="fila">
+                    <input type="text" placeholder="Asunto..." class="input-full" name="subject" required>
+                </div>
+                <div class="fila">
+                    <textarea name="comments" id="" cols="30" rows="10" placeholder="Tu Mensaje..." class="imput-full"
+                        required></textarea>
+                </div>
+                <input type="submit" value="Enviar Mensaje" class="btn-enviar">
+
+            </form>
+        </div>
+    </section>
+
+    <!-- SECCION FOOTER-->
+
+    <footer>
+        <p>Ramiro Velazco - 2023</p>
+        <div class="redes">
+            <a target="_blank" href="https://www.instagram.com/rami.velazco/?hl=es-la"><i
+                    class="fa-brands fa-instagram"></i></a>
+            <a target="_blank" href="https://www.linkedin.com/in/ramiro-velazco-5296b8261/"><i
+                    class="fa-brands fa-linkedin"></i></i></a>
+            <a target="_blank" href="https://w.app/RamiroVelazco"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+    </footer>
+
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
